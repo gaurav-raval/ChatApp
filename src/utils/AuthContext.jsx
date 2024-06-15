@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   };
 
-  console.log("user", user);
+//   console.log("user", user);
   const handleUserLogin = async (e, credentials) => {
     e.preventDefault();
 
@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
         credentials.password
       );
 
-      console.log("response", response);
+    //   console.log("response", response);
       const userDetails = await account.get();
       setUser(userDetails);
       navigate("/");

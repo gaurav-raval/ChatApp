@@ -19,8 +19,8 @@ function Room() {
   const [messages, setMessages] = useState([]);
   const [messageBody, setMessageBody] = useState('')
 
-  console.log('message',messages)
-  console.log('messageBody',messageBody);
+  // console.log('message',messages)
+  // console.log('messageBody',messageBody);
 
   const[counter,setCounter] = useState(0) 
 
@@ -64,7 +64,7 @@ function Room() {
       ]
     );
 
-    console.log('getMessage',response);
+    // console.log('getMessage',response);
     setMessages(response.documents);
   };
 
